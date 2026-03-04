@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #f8f9fa 50%, #00a2ff 50%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .profile-container {
+            background: #fff;
+            width: 80%;
+            max-width: 900px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 30px;
+        }
+
+        /* Sidebar Styling */
+        .sidebar img {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .change-photo-btn {
+            background: #555;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 13px;
+            margin-top: -4px;
+            cursor: pointer;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: #888;
+            margin: 25px 0 10px 0;
+            text-transform: uppercase;
+        }
+
+        .sidebar-links, .skills-list {
+            list-style: none;
+            padding: 0;
+            font-size: 14px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* Main Content Styling */
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .name-info h2 { margin: 0; color: #333; }
+        .name-info h4 { margin: 5px 0; color: #0062cc; font-weight: 500; }
+        .rankings { color: #888; font-size: 12px; margin-top: 15px; }
+        .rankings span { color: #333; font-weight: bold; }
+
+        .edit-btn {
+            background: #f1f1f1;
+            border: 1px solid #ddd;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            cursor: pointer;
+            color: #666;
+        }
+
+        /* Tabs */
+        .tabs {
+            margin-top: 30px;
+            border-bottom: 2px solid #f1f1f1;
+        }
+
+        .tab {
+            display: inline-block;
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .tab.active {
+            color: #0062cc;
+            border-bottom: 2px solid #0062cc;
+            margin-bottom: -2px;
+        }
+
+        .tab.inactive { color: #555; }
+
+        /* Info Grid */
+        .info-table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .info-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 12px 0;
+            font-size: 14px;
+        }
+
+        .label { font-weight: bold; color: #333; }
+        .value { color: #0062cc; font-weight: 500; }
+
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <div class="sidebar">
+        <img src="WhatsApp Image 2025-11-01 at 09.13.58_1a64a9ae.jpg" alt="Profile Picture">
+        <div class="change-photo-btn">Change Photo</div>
+        
+        <div class="section-title">Work Link</div>
+        <ul class="sidebar-links">
+            <li>Linked In</li>
+            <li>Fiverr Profile</li>
+            <li>Freelancer Profile</li>
+        </ul>
+
+        <div class="section-title">Skills</div>
+        <ul class="skills-list">
+            <li>Web Developer</li>
+            <li>PHP</li>
+            <li>WordPress</li>
+            <li>jQuery</li>
+            
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header-row">
+            <div class="name-info">
+                <h2>Saliha Mehdi</h2>
+                <h4>Web Developer </h4>
+                <p class="rankings">RANKINGS : <span>8/10</span></p>
+            </div>
+            <button class="edit-btn">Edit Profile</button>
+        </div>
+
+        <div class="tabs">
+            <div class="tab active">About</div>
+            <div class="tab inactive">Timeline</div>
+        </div>
+
+        <div class="info-table">
+            <div class="info-row">
+                <div class="label">User Id</div>
+                <div class="value">Saliha1194</div>
+            </div>
+            <div class="info-row">
+                <div class="label">Name</div>
+                <div class="value">Saliha Mehdi</div>
+            </div>
+            <div class="info-row">
+                <div class="label">Email</div>
+                <div class="value">salihamehdi756@gmail.com</div>
+            </div>
+            <div class="info-row">
+                <div class="label">Phone</div>
+                <div class="value">03233609412</div>
+            </div>
+            <div class="info-row">
+                <div class="label">Profession</div>
+                <div class="value">Web Developer</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
